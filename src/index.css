@@ -1,0 +1,75 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.sky-atmosphere {
+  background:
+    radial-gradient(95% 42% at 20% 0%, rgba(186, 230, 253, 0.72) 0%, rgba(224, 242, 254, 0) 68%),
+    radial-gradient(85% 40% at 85% 0%, rgba(199, 239, 255, 0.62) 0%, rgba(224, 242, 254, 0) 65%),
+    linear-gradient(180deg, #E2F2FE 0%, #F4FAFF 34%, #FFFFFF 68%, #FFFFFF 100%);
+}
+
+.dark .sky-atmosphere {
+  background:
+    radial-gradient(95% 44% at 20% 0%, rgba(30, 64, 115, 0.45) 0%, rgba(11, 18, 32, 0) 68%),
+    radial-gradient(85% 42% at 85% 0%, rgba(14, 78, 118, 0.35) 0%, rgba(11, 18, 32, 0) 65%),
+    linear-gradient(180deg, #0D1B2E 0%, #0B1424 38%, #090F1A 100%);
+}
+
+.azure-gradient {
+  background: linear-gradient(135deg, #56B2FF 0%, #2F86FF 55%, #2468EA 100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html.low-data-mode *,
+html.low-data-mode *::before,
+html.low-data-mode *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+}

@@ -1,0 +1,8 @@
+{
+  "name": "GlobalMind AI",
+  "description": "Personal AI assistant for education, technology, business, science, languages, and creative problem-solving.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
