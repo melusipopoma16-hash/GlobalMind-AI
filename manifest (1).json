@@ -1,0 +1,109 @@
+{
+  "name": "GlobalMind AI",
+  "short_name": "GlobalMind",
+  "description": "Free personal AI assistant for learning, technology, business, science, languages, and creative problem-solving.",
+  "start_url": "https://globalmind-ai.ai.studio",
+  "display": "standalone",
+  "background_color": "#E2F2FE",
+  "theme_color": "#2F86FF",
+  "lang": "en",
+  "scope": "/",
+  "id": "/",
+  "orientation": "portrait",
+  "categories": [
+    "beauty",
+    "books &amp; reference",
+    "business",
+    "cars",
+    "dating",
+    "development",
+    "education",
+    "entertainment",
+    "events",
+    "fashion",
+    "food",
+    "fundraising",
+    "games",
+    "graphics",
+    "graphics &amp; design",
+    "health",
+    "kids",
+    "lifestyle",
+    "medical",
+    "multimedia",
+    "music",
+    "navigation",
+    "network",
+    "networking",
+    "parenting",
+    "pets",
+    "photo",
+    "photo &amp; video",
+    "politics",
+    "productivity",
+    "shopping",
+    "social",
+    "utilities"
+  ],
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "New Chat",
+      "short_name": "Chat",
+      "description": "Start a fast AI conversation",
+      "url": "/?autostart=1",
+      "icons": [
+        {
+          "src": "/pwa-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Specialized Channels",
+      "short_name": "Channels",
+      "description": "Browse Homework, Business, Language &amp; Creative channels",
+      "url": "/?tab=topics",
+      "icons": [
+        {
+          "src": "/pwa-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Chat History",
+      "short_name": "History",
+      "description": "Read saved conversations offline",
+      "url": "/?tab=history",
+      "icons": [
+        {
+          "src": "/pwa-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
+}
