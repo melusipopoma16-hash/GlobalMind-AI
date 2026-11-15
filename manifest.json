@@ -1,0 +1,27 @@
+{
+  "background_color": "#757070",
+  "description": "GlobalMind AI is a personal AI assistant for learning, technology, business strategy, science, languages, and creative problem-solving.",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Globalmind AI",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "GlobalMind",
+  "start_url": "/https://globalmind-ai.ai.studio",
+  "theme_color": "#7c2e2e",
+  "icons": [
+    {
+      "src": "https://globalmind-ai.ai.studio/favicon.ico",
+      "type": "image/x-icon",
+      "isSquare": false,
+      "isPng": false,
+      "isWebp": false,
+      "isJpg": false,
+      "width": 0,
+      "is512x512": false,
+      "is256x256": false,
+      "is192x192": false
+    }
+  ],
+  "id": "/globalmind-ai"
+}
